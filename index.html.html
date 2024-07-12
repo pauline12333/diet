@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietzel</title>
+    <!-- Import Playfair Display font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif; /* Apply Verdana font */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Set text color */
+            text-align: center; /* Center align text */
+        }
+        .welcome-container {
+            background-color: #E7ECEF; /* Updated background color */
+            padding: 20px; /* Add padding */
+            max-width: 800px; /* Set maximum width */
+            margin: 0 auto; /* Center align horizontally */
+            position: relative; /* Position relative for stacking context */
+            z-index: 1; /* Ensure welcome text is above background */
+        }
+        .welcome-text {
+            position: relative; /* Position relative for stacking context */
+            z-index: 10; /* Ensure text is above background */
+            display: inline-block; /* Display as inline block */
+            background-color: inherit; /* Inherit background color */
+            padding: 10px; /* Add padding */
+        }
+        nav {
+            background-color: #E7ECEF; /* Updated background color */
+            text-align: right;
+            padding: 10px 20px;
+            position: relative; /* Position relative for stacking context */
+            z-index: 10; /* Ensure navigation is above other elements */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        header {
+            background-color: transparent; /* Transparent background */
+            color: #E7ECEF; /* Updated text color */
+            padding: 1em 20px; /* Added padding on the sides for spacing */
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+            align-items: center; /* Center items vertically */
+            position: relative; /* Position relative for stacking context */
+            z-index: 20; /* Ensure header is above other elements */
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Apply Playfair Display font to h1 */
+            font-weight: 700; /* Bold font weight */
+            margin: 0; /* Remove default margin */
+            position: relative; /* Position relative for stacking context */
+            z-index: 20; /* Ensure header text is above other elements */
+            color: #E7ECEF; /* Updated text color */
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative; /* Position relative for stacking context */
+            z-index: 15; /* Ensure main content is above background */
+            font-family: 'Verdana', sans-serif; /* Apply Verdana font */
+        }
+        footer {
+            background-color: transparent; /* Transparent background */
+            color: #E7ECEF; /* Updated text color */
+            text-align: center;
+            padding: 10px 0;
+            clear: both; /* Clear floats */
+            position: relative; /* Position relative for stacking context */
+            z-index: 10; /* Ensure footer is above background */
+        }
+        .section-title {
+            color: #E7ECEF; /* Updated text color */
+            border-bottom: 2px solid #E7ECEF; /* Adjust border color */
+            padding-bottom: 5px;
+            font-family: 'Playfair Display', serif; /* Apply Playfair Display font to section titles */
+        }
+        .philosophy p {
+            text-align: justify;
+        }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+            background-color: #f9f9f9; /* Light background color */
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #E7ECEF; /* Updated background color */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #C1C7D0; /* Darken color on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <h1>Dietzel</h1>
+    </header>
+    <main>
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <p>Welcome to Dietzel, where luxury meets fragrance perfection.</p>
+            </div>
+        </div>
+        
+        <section id="about">
+            <h2>Our Story</h2>
+            <div class="philosophy">
+                <h3 class="section-title">Philosophy of Dietzel</h3>
+                <p>At Dietzel, we are dedicated to fostering mental wellness through holistic and personalized care. We believe in empowerment, empathy, and evidence-based practices to support overall well-being.</p>
+            </div>
+        </section>
+        
+        <section id="products">
+            <h2>Our Products</h2>
+            
+            <div class="product">
+                <h3>Perfume Oil for Anxiety</h3>
+                <p>Combat chronic and situational anxiety with our specialized perfume oil. Formulated with calming ingredients, it offers a gentle, long-lasting fragrance designed to promote relaxation and alleviate stress throughout your day.</p>
+            </div>
+            
+            <div class="product">
+                <h3>Perfume Oil for Depression</h3>
+                <p>Address depressive moods with our uplifting perfume oil. Crafted to boost mood and provide emotional support, its refreshing scent encourages positivity and mental well-being.</p>
+            </div>
+            
+            <div class="product">
+                <h3>Dual-Purpose Perfume Oil and Lipstick</h3>
+                <p>For added convenience, our perfume oils are available in a unique dual-purpose design. Each product features a separate perfume oil and lipstick combination. The perfume oil provides calming or uplifting benefits, while the lipstick adds a touch of color and can be easily attached to your keys with a secure ring for daily carry.</p>
+            </div>
+            
+        </section>
+
+        
+
+ 
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispielbild</title>
+    <style>
+        /* CSS-Stil für die Bilder */
+        .image-container {
+            text-align: center; /* Zentrierung der Bilder horizontal */
+        }
+
+        .image-container img {
+            max-width: 50%; /* Beispiel: Bild auf maximal 50% der Container-Breite setzen */
+            height: auto; /* Automatische Anpassung der Höhe entsprechend der Breite */
+            display: inline-block; /* Als Inline-Blockelemente darstellen, um sie nebeneinander zu platzieren */
+            margin: 10px; /* Abstand zwischen den Bildern */
+        }
+
+        .small-image {
+            max-width: 30%; /* Beispiel: Kleineres Bild auf maximal 30% der Container-Breite setzen */
+            margin: 0; /* Kein Abstand für das kleinere Bild */
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <div class="image-container">
+        <img src="Southoffrance.png .jpeg" alt="Beschreibung des ersten Bildes">
+        <img src="antibes.png .jpg" alt="Beschreibung des zweiten Bildes">
+        <img src="Pauline.png .jpg" class="small-image" alt="Beschreibung des dritten, kleineren Bildes">
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispielbild</title>
+    <style>
+        /* CSS-Stil für die Bilder */
+        .image-container {
+            display: flex; /* Flexbox verwenden */
+            justify-content: center; /* Zentriert die Elemente horizontal */
+            align-items: center; /* Zentriert die Elemente vertikal (falls erforderlich) */
+        }
+
+        .image-container img {
+            max-width: 50%; /* Beispiel: Bild auf maximal 50% der Container-Breite setzen */
+            height: auto; /* Automatische Anpassung der Höhe entsprechend der Breite */
+            margin: 10px; /* Abstand zwischen den Bildern */
+        }
+
+        .small-image {
+            max-width: 30%; /* Beispiel: Kleineres Bild auf maximal 30% der Container-Breite setzen */
+        }
+  
+
+
+
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Stil für das About Me */
+        .about-me {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .about-me h2 {
+            color: #333;
+        }
+        .about-me p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <style>
+            /* Stil für das About Me */
+            .about-me {
+                font-family: Arial, sans-serif;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .about-me h2 {
+                color: #333;
+            }
+            .about-me p {
+                line-height: 1.6;
+                color: #666;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <img src="Profilbild.png.jpeg" alt="Profilbild" class="profile-img">
+            <p>Hello, I'm Pauline Dietzel and the founder of Dietzel.</p>
+            <p>I have expertise in psychology and a passion for perfume.</p>
+            <p>My goal is to help people through my perfume that enhances Mental Health.</p>
+        </div>
+    </body>
+    </html>
+
+  
+
+
+    
+    
+
+
+       
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dietzel - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
